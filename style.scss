@@ -1,0 +1,15 @@
+/* Importing remember import order matter*/
+@import "./variables";
+@import "./header";
+
+/*mixins with parameters*/
+// .contact {
+//   @include flexCenter(row, blue);
+// }
+
+.contact {
+  @extend header;
+  /*overrid the extend inheritance */
+  background: lightcoral;
+  
+}

@@ -1,0 +1,38 @@
+header {
+  height: 100vh;
+  color: $textColor;
+  background: lightblue;
+  button {
+    background: $primaryBtn;
+    &::after {
+      content: "Helloooo"
+    }
+  }
+}
+
+/*Mixin*/
+// @mixin flexCenter($direction, $background) {
+//   height: 100vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: $direction;
+//   background: $background;
+// }
+
+/*Nesting If you want to add the focus, hover, after, before, just use the add symbol and colons*/
+// header {
+//   @include flexCenter(column, red);
+//   height: 100vh;
+//   background: lightblue;
+//   color: $textColor;
+//   button {
+//     background: $primaryBtn;
+//     &::after {
+//       content: "Helloooo"
+//     }
+//     &:hover {
+//       background: red;
+//     }
+//   }
+// }
